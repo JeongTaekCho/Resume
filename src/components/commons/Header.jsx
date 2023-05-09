@@ -14,7 +14,9 @@ export default function Header() {
       <Wrap>
         <Container>
           <Logo isShow={isShow}>
-            <Link href="/">JeongTaek</Link>
+            <Link href="/" onClick={() => setIsShow(false)}>
+              JeongTaek
+            </Link>
           </Logo>
           <NavBox>
             <MenuBtn isShow={isShow} onClick={onToggleNavigation}>
@@ -26,7 +28,7 @@ export default function Header() {
       <Navigation isShow={isShow}>
         <Menu>
           <li>
-            <Link href="resume">
+            <Link href="/resume" onClick={() => setIsShow(false)}>
               <LinkContainer>
                 <span>RESUME</span>
                 <span className="hover-ac">RESUME</span>
@@ -34,7 +36,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="resume">
+            <Link href="/contact" onClick={() => setIsShow(false)}>
               <LinkContainer>
                 <span>CONTACT</span>
                 <span className="hover-ac">CONTACT</span>
@@ -53,10 +55,11 @@ const Wrap = styled.header`
   top: 0;
   left: 0;
   z-index: 9999;
+  backdrop-filter: blur(3px);
 `;
 
 const Container = styled.div`
-  padding: 4rem 6rem;
+  padding: 4rem 6rem 1rem 6rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -68,7 +71,7 @@ const Logo = styled.h1`
   justify-content: center;
   align-items: center;
   a {
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: 500;
     color: ${(props) => (props.isShow ? "#fff" : "#111")};
     text-decoration: line-through;
@@ -83,7 +86,7 @@ const NavBox = styled.div`
 `;
 
 const MenuBtn = styled.button`
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: 500;
   color: ${(props) => (props.isShow ? "#fff" : "#111")};
   border: none;
@@ -110,10 +113,6 @@ const Menu = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  li {
-    font-size: 6rem;
-    font-weight: 700;
-  }
 `;
 
 const LinkContainer = styled.div`
@@ -121,7 +120,13 @@ const LinkContainer = styled.div`
   overflow: hidden;
   display: flex;
   justify-content: center;
+  a {
+    font-size: 6rem;
+    font-weight: 700;
+  }
   span {
+    font-size: 6rem;
+    font-weight: 700;
     display: block;
     color: #fff;
   }

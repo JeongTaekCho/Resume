@@ -12,7 +12,7 @@ export default function Home() {
             안녕하세요?
           </Introduce>
           <Introduce animate={{ y: -50, opacity: 1 }} transition={{ delay: 1 }}>
-            <span>고민을 성과로 바꾸는 개발자</span> 조정택 입니다.
+            <span>' 고민을 성과로 바꾸는 개발자 '</span> 조정택 입니다.
           </Introduce>
         </IntroBox>
       </Container>
@@ -35,14 +35,15 @@ const Container = styled.div`
 const IntroBox = styled.div``;
 
 const Introduce = styled(motion.p)`
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: 400;
   color: #111;
   text-align: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2rem;
   opacity: 0;
 
   span {
+    font-size: 4.5rem;
     font-weight: 600;
     color: #fff;
     -webkit-text-stroke: 2px #111;
