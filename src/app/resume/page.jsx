@@ -11,7 +11,7 @@ export default function Resume() {
         <DevImgBox>
           <Image width={60} height={60} src="/images/develop.png" alt="개발자 아이콘" />
         </DevImgBox>
-        <SubTitle>INTRODUCE.</SubTitle>
+        <SubTitle>_INTRODUCE.</SubTitle>
         <ProfileBox>
           <IntroduceBox>
             <Title>안녕하세요, 개발자 조정택 입니다.</Title>
@@ -25,7 +25,7 @@ export default function Resume() {
             <InfoContainer>
               <InfoBox>
                 <Image src="/images/mail.png" width={30} height={30} />
-                <Link href="#">cjt3591@gmail.com</Link>
+                <span>cjt3591@gmail.com</span>
               </InfoBox>
               <InfoBox>
                 <Image src="/images/github.png" width={30} height={30} />
@@ -44,9 +44,14 @@ export default function Resume() {
           <ProfileImgBox />
         </ProfileBox>
         <ProjectBox>
-          <SubTitle>PROJECTS.</SubTitle>
+          <SubTitle>_PROJECTS.</SubTitle>
           <ProjectContainer>
-            <ProjectTitle>Foodiary</ProjectTitle>
+            <ProjectTitleBox>
+              <ProjectTitle>Foodiary</ProjectTitle>
+              <Link href="https://github.com/JeongTaekCho/foodiary_project_front" target="blank">
+                <ProjectDetailBtn>Github &gt;</ProjectDetailBtn>
+              </Link>
+            </ProjectTitleBox>
             <ProjectContents>
               <ContentList>
                 <li>
@@ -95,7 +100,12 @@ export default function Resume() {
             </ProjectContents>
           </ProjectContainer>
           <ProjectContainer>
-            <ProjectTitle>We-Trekking</ProjectTitle>
+            <ProjectTitleBox>
+              <ProjectTitle>We-Trekking</ProjectTitle>
+              <Link href="https://github.com/JeongTaekCho/WeTrekking_client" target="blank">
+                <ProjectDetailBtn>Github &gt;</ProjectDetailBtn>
+              </Link>
+            </ProjectTitleBox>
             <ProjectContents>
               <ContentList>
                 <li>
@@ -141,10 +151,102 @@ export default function Resume() {
                   </span>
                 </li>
               </ContentList>
-              <Image src="/images/wetrekking.png" width={550} height={150} />
+              <Image src="/images/wetrekking.png" width={450} height={120} />
             </ProjectContents>
           </ProjectContainer>
         </ProjectBox>
+        <SkillBox>
+          <SubTitle>_SKILL.</SubTitle>
+          <SkillContainer>
+            <RoleTitle>프론트엔드</RoleTitle>
+            <ContentList>
+              <li>
+                <span className="content-title">HTML / CSS</span>
+                <span>시멘틱 태그를 준수하며 생각하는 디자인을 그대로 구현할 수 있습니다.</span>
+              </li>
+              <li>
+                <span className="content-title">JavaScript</span>
+                <span>
+                  ES6를 포함한 자바스크립트 문법에 익숙하며 현재는 자바스크립트 동작원리에 대해 조금 더 깊게 공부하는
+                  중입니다.
+                </span>
+              </li>
+              <li>
+                <span className="content-title">React</span>
+                <span>
+                  함수형 컴포넌트에 익숙하며 컴포넌트를 분리하여 디자인하는데 익숙합니다. 반복되는 로직을 분리하여
+                  사용하기 위해 Custom Hook을 제작하여 사용하며 생명주기를 다루는데 익숙합니다.
+                </span>
+              </li>
+              <li>
+                <span className="content-title">GraphQL</span>
+                <span>REST-API와 GraphQL의 장단점을 구분하여 상황에 맞는 데이터 통신을 할 수 있습니다.</span>
+              </li>
+              <li>
+                <span className="content-title">Next.js</span>
+                <span>
+                  Next12 버전으로 공부를 해왔었는데 현재 Next13 버전도 학습중에 있습니다. 서버 사이드 렌더링을 구현 할
+                  수 있습니다.
+                </span>
+              </li>
+              <li>
+                <span className="content-title">전역 상태관리</span>
+                <span>Recoil을 통한 전역 상태관리를 할 수 있으며 현재 Redux / Zustand도 지속적으로 학습중입니다.</span>
+              </li>
+            </ContentList>
+          </SkillContainer>
+          <SkillContainer>
+            <RoleTitle>백엔드</RoleTitle>
+            <ContentList>
+              <li>
+                <span className="content-title">Node.js / Express</span>
+                <span>Node와 Express를 통해 간단한 서버를 구현할 수 있습니다.</span>
+              </li>
+              <li>
+                <span className="content-title">MongoDB</span>
+                <span>MongoDB / mongoose를 통해 모델링을 할 수 있고 CRUD구현이 가능합니다.</span>
+              </li>
+              <li>
+                <span className="content-title">SQL</span>
+                <span>SQL을 활용하여 테이블 관계를 형성할 수 있으며, 상세문법을 지속적으로 학습중에 있습니다.</span>
+              </li>
+            </ContentList>
+          </SkillContainer>
+        </SkillBox>
+        <EducationBox>
+          <SubTitle>_EDUCATION.</SubTitle>
+          <EducationContainer>
+            <ContentList>
+              <li>
+                <span className="content-title">
+                  엘리스 AI트랙 7기 ~ING
+                  <br />
+                  <span>(2023.02 ~ 2023.08)</span>
+                </span>
+                <span>
+                  1. 리액트와 Node.js를 통한 웹개발의 전반적인 내용 학습 / 2. SQL, 파이썬을 활용한 데이터 분석 / 3.
+                  AI활용 <br /> 각 파트가 마칠 때마다 팀 프로젝트를 시행하여 총 3회 팀 프로젝트를 경험합니다.
+                </span>
+              </li>
+              <li>
+                <span className="content-title">
+                  원티드 프리온보딩
+                  <br />
+                  <span>(2022.12 ~ 2023.01)</span>
+                </span>
+                <span>매 주 기업과제를 해결하며 리액트의 최적화 방법 등의 심화적인 내용을 학습 하였습니다.</span>
+              </li>
+              <li>
+                <span className="content-title">
+                  코드캠프 FE9기
+                  <br />
+                  <span>(2022.08 ~ 2022.11)</span>
+                </span>
+                <span>Next.js를 주로 배우며 프론트엔드의 전반적인 내용을 학습 하였습니다.</span>
+              </li>
+            </ContentList>
+          </EducationContainer>
+        </EducationBox>
       </Container>
     </Wrap>
   );
@@ -208,6 +310,12 @@ const InfoBox = styled.div`
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.2rem;
+  span {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #111;
+  }
+
   a {
     font-size: 1.7rem;
     font-weight: 700;
@@ -234,12 +342,18 @@ const ProjectContainer = styled.div`
   margin-bottom: 10rem;
 `;
 
+const ProjectTitleBox = styled.div`
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 3rem;
+`;
+
 const ProjectTitle = styled.h4`
   display: inline-block;
   font-size: 4rem;
   font-weight: 600;
   color: #111;
-  margin-bottom: 3rem;
   position: relative;
   &::after {
     display: block;
@@ -252,6 +366,16 @@ const ProjectTitle = styled.h4`
     bottom: 3px;
     z-index: -1;
   }
+`;
+
+const ProjectDetailBtn = styled.button`
+  border: none;
+  background-color: #000;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
 `;
 
 const ProjectContents = styled.div`
@@ -269,11 +393,59 @@ const ContentList = styled.ul`
       font-size: 2rem;
       font-weight: 400;
       line-height: 1.4;
+      display: flex;
+      align-items: center;
     }
     .content-title {
       font-size: 2.8rem;
       min-width: 22rem;
       font-weight: 500;
+    }
+  }
+`;
+
+const SkillBox = styled.div`
+  margin-bottom: 12rem;
+`;
+
+const SkillContainer = styled.div`
+  &:first-of-type {
+    margin-bottom: 10rem;
+  }
+  ul {
+    li {
+      margin-bottom: 4rem;
+      .content-title {
+        min-width: 28rem;
+      }
+    }
+  }
+`;
+
+const RoleTitle = styled.h5`
+  font-size: 4rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 3.5rem;
+`;
+
+const EducationBox = styled.div``;
+
+const EducationContainer = styled.div`
+  ul {
+    li {
+      .content-title {
+        min-width: 28rem;
+        font-size: 2.4rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        span {
+          font-size: 1.8rem;
+          font-weight: 400;
+          color: #aaa;
+        }
+      }
     }
   }
 `;
