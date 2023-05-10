@@ -3,7 +3,7 @@
 const nextConfig = {
   basePath: "/Resume",
   output: "export",
-  trailingSlash: true,
+  assetPrefix: "/images",
 };
 
 module.exports = nextConfig;
