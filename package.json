@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build": "next build && next export",
+    "predeploy": "npm run build",
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -20,5 +23,8 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.1",
     "react-transition-group": "^4.4.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
