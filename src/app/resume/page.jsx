@@ -1,5 +1,6 @@
 "use client";
 
+import { res } from "@/commons/styles/responsive";
 import styled from "@emotion/styled";
 import Image from "next/image";
 import Link from "next/link";
@@ -270,6 +271,12 @@ const ProfileBox = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8rem;
+
+  @media ${res.tablet} {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 8rem;
+  }
 `;
 
 const IntroduceBox = styled.div``;
@@ -280,6 +287,11 @@ const ProfileImgBox = styled.div`
   background: url("/images/profile.jpg");
   background-position: center;
   border-radius: 50%;
+
+  @media ${res.mobile} {
+    width: 55rem;
+    height: 55rem;
+  }
 `;
 
 const Title = styled.h2`
@@ -287,6 +299,10 @@ const Title = styled.h2`
   font-weight: 500;
   color: #111;
   margin-bottom: 3.5rem;
+
+  @media ${res.mobile} {
+    font-size: 4.2rem;
+  }
 `;
 
 const IntroText = styled.p`
@@ -298,6 +314,14 @@ const IntroText = styled.p`
   strong {
     font-size: 1.8rem;
     font-weight: 700;
+
+    @media ${res.mobile} {
+      font-size: 2.2rem;
+    }
+  }
+
+  @media ${res.mobile} {
+    font-size: 2.2rem;
   }
 `;
 
@@ -314,12 +338,19 @@ const InfoBox = styled.div`
     font-size: 1.7rem;
     font-weight: 700;
     color: #111;
+    @media ${res.mobile} {
+      font-size: 2.2rem;
+    }
   }
 
   a {
     font-size: 1.7rem;
     font-weight: 700;
     color: #111;
+
+    @media ${res.mobile} {
+      font-size: 2.2rem;
+    }
   }
 
   a:hover {
@@ -383,12 +414,27 @@ const ProjectContents = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media ${res.tablet} {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 8rem;
+
+    img {
+      width: 60%;
+      height: auto;
+    }
+  }
 `;
 
 const ContentList = styled.ul`
   li {
     display: flex;
     margin-bottom: 3rem;
+    @media ${res.mobile} {
+      flex-direction: column;
+      gap: 2rem;
+    }
     span {
       font-size: 2rem;
       font-weight: 400;

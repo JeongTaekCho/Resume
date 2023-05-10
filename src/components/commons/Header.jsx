@@ -1,3 +1,4 @@
+import { res } from "@/commons/styles/responsive";
 import styled from "@emotion/styled";
 import Link from "next/link";
 import { useState } from "react";
@@ -76,6 +77,10 @@ const Logo = styled.h1`
     color: ${(props) => (props.isShow ? "#fff" : "#111")};
     text-decoration: line-through;
     letter-spacing: 2px;
+
+    @media ${res.mobile} {
+      font-size: 2.6rem;
+    }
   }
 `;
 
@@ -93,6 +98,10 @@ const MenuBtn = styled.button`
   background: none;
   letter-spacing: 2px;
   cursor: pointer;
+
+  @media ${res.mobile} {
+    font-size: 2.6rem;
+  }
 `;
 
 const Navigation = styled.div`

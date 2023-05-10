@@ -1,5 +1,6 @@
 "use client";
 
+import { res } from "@/commons/styles/responsive";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
@@ -47,5 +48,9 @@ const Introduce = styled(motion.p)`
     font-weight: 600;
     color: #fff;
     -webkit-text-stroke: 2px #111;
+    line-height: 1.4;
+    @media ${res.tablet} {
+      -webkit-text-stroke: 1px #111;
+    }
   }
 `;

@@ -125,3 +125,16 @@ table {
 a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 1199px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    font-size: 6px;
+  }
+}
