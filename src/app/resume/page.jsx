@@ -2,7 +2,6 @@
 
 import { res } from "@/commons/styles/responsive";
 import styled from "@emotion/styled";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Resume() {
@@ -10,7 +9,7 @@ export default function Resume() {
     <Wrap>
       <Container>
         <DevImgBox>
-          <Image width={60} height={60} src="/images/develop.png" alt="개발자 아이콘" />
+          <img width={60} height={60} src="./images/develop.png" alt="개발자 아이콘" />
         </DevImgBox>
         <SubTitle>_INTRODUCE.</SubTitle>
         <ProfileBox>
@@ -25,17 +24,17 @@ export default function Resume() {
             </IntroText>
             <InfoContainer>
               <InfoBox>
-                <Image src="/images/mail.png" width={30} height={30} />
+                <img src="./images/mail.png" width={30} height={30} />
                 <span>cjt3591@gmail.com</span>
               </InfoBox>
               <InfoBox>
-                <Image src="/images/github.png" width={30} height={30} />
+                <img src="./images/github.png" width={30} height={30} />
                 <Link href="https://github.com/JeongTaekCho" target="blank">
                   Github
                 </Link>
               </InfoBox>
               <InfoBox>
-                <Image src="/images/blog.png" width={30} height={30} />
+                <img src="./images/blog.png" width={30} height={30} />
                 <Link href="https://jeong-taek.tistory.com/" target="blank">
                   Blog
                 </Link>
@@ -97,7 +96,7 @@ export default function Resume() {
                   </span>
                 </li>
               </ContentList>
-              <Image src="/images/foodiary.png" width={400} height={300} />
+              <img src="./images/foodiary.png" width={400} height={300} />
             </ProjectContents>
           </ProjectContainer>
           <ProjectContainer>
@@ -152,7 +151,7 @@ export default function Resume() {
                   </span>
                 </li>
               </ContentList>
-              <Image src="/images/wetrekking.png" width={450} height={120} />
+              <img src="./images/wetrekking.png" width={450} height={120} />
             </ProjectContents>
           </ProjectContainer>
         </ProjectBox>
@@ -231,7 +230,7 @@ export default function Resume() {
               </li>
               <li>
                 <span className="content-title">
-                  원티드 프리온보딩
+                  원티드 프리온보딩 8차
                   <br />
                   <span>(2022.12 ~ 2023.01)</span>
                 </span>
@@ -239,7 +238,7 @@ export default function Resume() {
               </li>
               <li>
                 <span className="content-title">
-                  코드캠프 FE9기
+                  코드캠프 FE 9기
                   <br />
                   <span>(2022.08 ~ 2022.11)</span>
                 </span>
@@ -284,7 +283,7 @@ const IntroduceBox = styled.div``;
 const ProfileImgBox = styled.div`
   width: 45rem;
   height: 45rem;
-  background: url("/images/profile.jpg");
+  background: url("./images/profile.jpg");
   background-position: center;
   border-radius: 50%;
 

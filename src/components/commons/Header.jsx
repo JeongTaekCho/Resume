@@ -15,7 +15,7 @@ export default function Header() {
       <Wrap>
         <Container>
           <Logo isShow={isShow}>
-            <Link href="/" onClick={() => setIsShow(false)}>
+            <Link href="/resume" onClick={() => setIsShow(false)}>
               JeongTaek
             </Link>
           </Logo>
@@ -110,6 +110,7 @@ const Navigation = styled.div`
   position: fixed;
   top: ${(props) => (props.isShow ? 0 : "-100%")};
   left: 0;
+  opacity: ${(props) => (props.isShow ? 1 : 0)};
   background-color: #000;
   display: flex;
   justify-content: center;
