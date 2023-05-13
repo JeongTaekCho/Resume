@@ -2,9 +2,16 @@
 
 import { res } from "@/commons/styles/responsive";
 import styled from "@emotion/styled";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Resume() {
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <Wrap>
       <Container>
@@ -12,7 +19,7 @@ export default function Resume() {
           <img width={60} height={60} src="./images/develop.png" alt="개발자 아이콘" />
         </DevImgBox>
         <SubTitle>_INTRODUCE.</SubTitle>
-        <ProfileBox>
+        <ProfileBox data-aos="flip-up">
           <IntroduceBox>
             <Title>안녕하세요, 개발자 조정택 입니다.</Title>
             <IntroText>
@@ -46,14 +53,14 @@ export default function Resume() {
         <ProjectBox>
           <SubTitle>_PROJECTS.</SubTitle>
           <ProjectContainer>
-            <ProjectTitleBox>
+            <ProjectTitleBox data-aos="fade-down">
               <ProjectTitle>Foodiary</ProjectTitle>
               <Link href="https://github.com/JeongTaekCho/foodiary_project_front" target="blank">
                 <ProjectDetailBtn>Github &gt;</ProjectDetailBtn>
               </Link>
             </ProjectTitleBox>
             <ProjectContents>
-              <ContentList>
+              <ContentList data-aos="fade-right">
                 <li>
                   <span className="content-title">작업기간</span>
                   <span>2022.12 ~ 2023.01</span>
@@ -96,18 +103,18 @@ export default function Resume() {
                   </span>
                 </li>
               </ContentList>
-              <img src="./images/foodiary.png" width={400} height={300} />
+              <img src="./images/foodiary.png" width={400} height={300} data-aos="fade-left" />
             </ProjectContents>
           </ProjectContainer>
           <ProjectContainer>
-            <ProjectTitleBox>
+            <ProjectTitleBox data-aos="fade-down">
               <ProjectTitle>We-Trekking</ProjectTitle>
               <Link href="https://github.com/JeongTaekCho/WeTrekking_client" target="blank">
                 <ProjectDetailBtn>Github &gt;</ProjectDetailBtn>
               </Link>
             </ProjectTitleBox>
             <ProjectContents>
-              <ContentList>
+              <ContentList data-aos="fade-right">
                 <li>
                   <span className="content-title">작업기간</span>
                   <span>2022.10 ~ 2022.11</span>
@@ -151,7 +158,7 @@ export default function Resume() {
                   </span>
                 </li>
               </ContentList>
-              <img src="./images/wetrekking.png" width={450} height={120} />
+              <img src="./images/wetrekking.png" width={450} height={120} data-aos="fade-left" />
             </ProjectContents>
           </ProjectContainer>
         </ProjectBox>
