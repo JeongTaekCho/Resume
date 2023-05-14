@@ -19,7 +19,7 @@ export default function Resume() {
           <img width={60} height={60} src="./images/develop.png" alt="개발자 아이콘" />
         </DevImgBox>
         <SubTitle>_INTRODUCE.</SubTitle>
-        <ProfileBox data-aos="flip-up">
+        <ProfileBox data-aos="fade-down">
           <IntroduceBox>
             <Title>안녕하세요, 개발자 조정택 입니다.</Title>
             <IntroText>
@@ -53,7 +53,7 @@ export default function Resume() {
         <ProjectBox>
           <SubTitle>_PROJECTS.</SubTitle>
           <ProjectContainer>
-            <ProjectTitleBox data-aos="fade-down">
+            <ProjectTitleBox>
               <ProjectTitle>Foodiary</ProjectTitle>
               <Link href="https://github.com/JeongTaekCho/foodiary_project_front" target="blank">
                 <ProjectDetailBtn>Github &gt;</ProjectDetailBtn>
@@ -107,7 +107,7 @@ export default function Resume() {
             </ProjectContents>
           </ProjectContainer>
           <ProjectContainer>
-            <ProjectTitleBox data-aos="fade-down">
+            <ProjectTitleBox>
               <ProjectTitle>We-Trekking</ProjectTitle>
               <Link href="https://github.com/JeongTaekCho/WeTrekking_client" target="blank">
                 <ProjectDetailBtn>Github &gt;</ProjectDetailBtn>
@@ -164,7 +164,7 @@ export default function Resume() {
         </ProjectBox>
         <SkillBox>
           <SubTitle>_SKILL.</SubTitle>
-          <SkillContainer>
+          <SkillContainer data-aos="fade-up">
             <RoleTitle>프론트엔드</RoleTitle>
             <ContentList>
               <li>
@@ -202,7 +202,7 @@ export default function Resume() {
               </li>
             </ContentList>
           </SkillContainer>
-          <SkillContainer>
+          <SkillContainer data-aos="fade-up">
             <RoleTitle>백엔드</RoleTitle>
             <ContentList>
               <li>
@@ -222,7 +222,7 @@ export default function Resume() {
         </SkillBox>
         <EducationBox>
           <SubTitle>_EDUCATION.</SubTitle>
-          <EducationContainer>
+          <EducationContainer data-aos="fade-up">
             <ContentList>
               <li>
                 <span className="content-title">
