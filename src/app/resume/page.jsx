@@ -58,6 +58,9 @@ export default function Resume() {
               <Link href="https://github.com/JeongTaekCho/foodiary_project_front" target="blank">
                 <ProjectDetailBtn>Github &gt;</ProjectDetailBtn>
               </Link>
+              <Link href="https://foodiary.netlify.app/" target="blank">
+                <ProjectDetailBtn>Go Foodiary &gt;</ProjectDetailBtn>
+              </Link>
             </ProjectTitleBox>
             <ProjectContents>
               <ContentList data-aos="fade-right">
