@@ -164,6 +164,47 @@ export default function Resume() {
               <img src="./images/wetrekking.png" width={450} height={120} data-aos="fade-left" />
             </ProjectContents>
           </ProjectContainer>
+          <ProjectContainer>
+            <ProjectTitleBox>
+              <ProjectTitle>사랑해 지구야</ProjectTitle>
+              <Link href="https://github.com/JeongTaekCho/Love-you-Earth" target="blank">
+                <ProjectDetailBtn>Github &gt;</ProjectDetailBtn>
+              </Link>
+            </ProjectTitleBox>
+            <ProjectContents>
+              <ContentList data-aos="fade-right">
+                <li>
+                  <span className="content-title">작업기간</span>
+                  <span>2023.05 ~ 2023.06</span>
+                </li>
+                <li>
+                  <span className="content-title">참여인원</span>
+                  <span>Front-end: 2명 / Back-end: 2명</span>
+                </li>
+                <li>
+                  <span className="content-title">설명</span>
+                  <span>
+                    환경 문제에 대한 심각성을 알아보고, 그룹별 활동을 통해 재미있게 환경보호 활동에 동참하는 서비스!!
+                  </span>
+                </li>
+                <li>
+                  <span className="content-title">구현내용</span>
+                  <ul>
+                    <li>
+                      <span>- 그룹 생성/신청</span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span className="content-title">기술스택</span>
+                  <span>
+                    Front-end: React, Recoil, Axios, Styled-Components, MUI <br /> Back-end: Node.js, Express, MongoDB
+                  </span>
+                </li>
+              </ContentList>
+              <img src="./images/love-earth.png" width={450} height={120} data-aos="fade-left" />
+            </ProjectContents>
+          </ProjectContainer>
         </ProjectBox>
         <SkillBox>
           <SubTitle>_SKILL.</SubTitle>
