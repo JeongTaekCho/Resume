@@ -72,7 +72,8 @@ export default function Resume() {
                 <li>
                   <span className="content-title">설명</span>
                   <span>
-                    환경 문제에 대한 심각성을 알아보고, 그룹별 활동을 통해 재미있게 환경보호 활동에 동참하는 서비스!!
+                    환경 문제에 대한 심각성을 알아보고, 그룹별 활동을 통해 재미있게 환경보호 활동에 동참하는 서비스
+                    입니다.
                   </span>
                 </li>
                 <li>
@@ -276,7 +277,8 @@ export default function Resume() {
                 </span>
                 <span>
                   1. 리액트와 Node.js를 통한 웹개발의 전반적인 내용 학습 / 2. SQL, 파이썬을 활용한 데이터 분석 / 3.
-                  AI활용 <br /> 각 파트가 마칠 때마다 팀 프로젝트를 시행하여 총 3회 팀 프로젝트를 경험합니다.
+                  머신러닝, 딥러닝, AI활용 <br /> 각 파트가 마칠 때마다 팀 프로젝트를 시행하여 총 3회 팀 프로젝트를
+                  경험합니다.
                 </span>
               </li>
               <li>
