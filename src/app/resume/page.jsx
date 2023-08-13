@@ -295,8 +295,9 @@ export default function Resume() {
                 <span>
                   함수형 컴포넌트에 익숙하며 컴포넌트를 분리하여 디자인하는데 익숙합니다. 반복되는 로직을 분리하여
                   사용하기 위해 Custom Hook을 제작하여 사용하며 생명주기를 다루는데 익숙합니다.
+                  <br />
+                  Yarn과 Yarn Berry 사용을 선호합니다.
                 </span>
-                <span>Yarn과 Yarn Berry 사용을 선호합니다.</span>
               </li>
               <li>
                 <span className="content-title">TypeScript</span>
