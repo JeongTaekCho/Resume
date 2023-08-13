@@ -54,6 +54,73 @@ export default function Resume() {
           <SubTitle>_PROJECTS.</SubTitle>
           <ProjectContainer>
             <ProjectTitleBox>
+              <ProjectTitle>DOGTOR - AI 반려동물 피부질환 예측 서비스</ProjectTitle>
+              <Link href="https://github.com/JeongTaekCho/-DOCTOR" target="blank">
+                <ProjectDetailBtn>Github &gt;</ProjectDetailBtn>
+              </Link>
+            </ProjectTitleBox>
+            <ProjectContents>
+              <ContentList data-aos="fade-right">
+                <li>
+                  <span className="content-title">작업기간</span>
+                  <span>2023.7 ~ 2023.08</span>
+                </li>
+                <li>
+                  <span className="content-title">참여인원</span>
+                  <span>Front-end: 3명 / Back-end: 3명</span>
+                </li>
+                <li>
+                  <span className="content-title">설명</span>
+                  <span>
+                    반려동물을 키우는 사람들이, 반려동물의 피부 질환이 발생한 경우, 초기에 증상 유무를 빠르게 판단해
+                    신속한 병원 내원 및 진료를 할 수 있도록 하기 위해 서비스 개발
+                  </span>
+                </li>
+                <li>
+                  <span className="content-title">구현내용</span>
+                  <ul>
+                    <li>
+                      <span>- AI를 활용한 반려동물 피부질환 예측</span>
+                    </li>
+                    <li>
+                      <span>- 주변 동물병원 찾기 및 검색</span>
+                    </li>
+                    <li>
+                      <span>- 실시간 수의사 상담</span>
+                    </li>
+                    <li>
+                      <span>- 커뮤니티</span>
+                    </li>
+                    <li>
+                      <span>- 로그인 / 회원가입</span>
+                    </li>
+                    <li>
+                      <span>- 마이페이지(수의사 인증 및 개인정보 변경)</span>
+                    </li>
+                    <li>
+                      <span>- 관리자페이지(유저 조회 및 관리)</span>
+                    </li>
+                    <li>
+                      <span>- 관리자페이지(수의사 인증 및 반려)</span>
+                    </li>
+                    <li>
+                      <span>- 관리자페이지(커뮤니티 신고 관리)</span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span className="content-title">기술스택</span>
+                  <span>
+                    Front-end: TypeScript, React, React-Query, Socket.io, Jotai, Styled-Components, MUI <br /> Back-end:
+                    Node.js, Express, MySql, Prisma
+                  </span>
+                </li>
+              </ContentList>
+              <img src="./images/dogtor.png" width={400} height={400} data-aos="fade-left" />
+            </ProjectContents>
+          </ProjectContainer>
+          {/* <ProjectContainer>
+            <ProjectTitleBox>
               <ProjectTitle>사랑해 지구야</ProjectTitle>
               <Link href="https://github.com/JeongTaekCho/Love-you-Earth" target="blank">
                 <ProjectDetailBtn>Github &gt;</ProjectDetailBtn>
@@ -93,7 +160,7 @@ export default function Resume() {
               </ContentList>
               <img src="./images/love-earth.png" width={450} height={120} data-aos="fade-left" />
             </ProjectContents>
-          </ProjectContainer>
+          </ProjectContainer> */}
           <ProjectContainer>
             <ProjectTitleBox>
               <ProjectTitle>Foodiary</ProjectTitle>
@@ -229,6 +296,11 @@ export default function Resume() {
                   함수형 컴포넌트에 익숙하며 컴포넌트를 분리하여 디자인하는데 익숙합니다. 반복되는 로직을 분리하여
                   사용하기 위해 Custom Hook을 제작하여 사용하며 생명주기를 다루는데 익숙합니다.
                 </span>
+                <span>Yarn과 Yarn Berry 사용을 선호합니다.</span>
+              </li>
+              <li>
+                <span className="content-title">TypeScript</span>
+                <span>TypeScript를 통한 리액트 코딩에 익숙하며 문법을 잘 활용하여 적절한 타입을 사용합니다.</span>
               </li>
               <li>
                 <span className="content-title">GraphQL</span>
@@ -271,7 +343,7 @@ export default function Resume() {
             <ContentList>
               <li>
                 <span className="content-title">
-                  엘리스 AI트랙 7기 ~ING
+                  엘리스 AI트랙 7기
                   <br />
                   <span>(2023.02 ~ 2023.08)</span>
                 </span>
