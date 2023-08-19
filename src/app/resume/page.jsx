@@ -119,7 +119,7 @@ export default function Resume() {
               <img src="./images/dogtor.png" width={400} height={400} data-aos="fade-left" />
             </ProjectContents>
           </ProjectContainer>
-          {/* <ProjectContainer>
+          <ProjectContainer>
             <ProjectTitleBox>
               <ProjectTitle>사랑해 지구야</ProjectTitle>
               <Link href="https://github.com/JeongTaekCho/Love-you-Earth" target="blank">
@@ -160,7 +160,7 @@ export default function Resume() {
               </ContentList>
               <img src="./images/love-earth.png" width={450} height={120} data-aos="fade-left" />
             </ProjectContents>
-          </ProjectContainer> */}
+          </ProjectContainer>
           <ProjectContainer>
             <ProjectTitleBox>
               <ProjectTitle>Foodiary</ProjectTitle>
