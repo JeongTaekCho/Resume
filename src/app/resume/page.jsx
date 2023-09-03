@@ -149,6 +149,15 @@ export default function Resume() {
                     <li>
                       <span>- 그룹 생성/신청</span>
                     </li>
+                    <li>
+                      <span>- 환경 데이터 분석</span>
+                    </li>
+                    <li>
+                      <span>- 환경 챌린지</span>
+                    </li>
+                    <li>
+                      <span>- 커뮤니티</span>
+                    </li>
                   </ul>
                 </li>
                 <li>
