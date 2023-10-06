@@ -404,6 +404,23 @@ export default function Resume() {
                         </ContentList>
                     </EducationContainer>
                 </EducationBox>
+                <EducationBox>
+                    <SubTitle>_Career.</SubTitle>
+                    <EducationContainer data-aos="fade-up">
+                        <ContentList>
+                            <li>
+                                <span className="content-title">
+                                    (주)마인드앤스위치
+                                    <br />
+                                    <span>(2023.10 ~)</span>
+                                </span>
+                                <span>
+                                    정리 예정
+                                </span>
+                            </li>
+                        </ContentList>
+                    </EducationContainer>
+                </EducationBox>
             </Container>
         </Wrap>
     );
