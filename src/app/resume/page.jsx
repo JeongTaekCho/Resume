@@ -415,7 +415,7 @@ export default function Resume() {
                                     <span>(2023.10 ~)</span>
                                 </span>
                                 <span>
-                                    정리 예정
+                                    웨더뉴스 날씹 웹/앱 유지보수, 마인드스위치 신규 컨텐츠 추가 및 유지보수
                                 </span>
                             </li>
                         </ContentList>
